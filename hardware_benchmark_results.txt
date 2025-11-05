@@ -1,0 +1,32 @@
+======================================================================
+HARDWARE BENCHMARK RESULTS
+Generated: 2025-11-04 22:55:52.144222
+======================================================================
+
+
+SYSTEM:
+{'OS': 'Linux', 'OS Version': '#1 SMP PREEMPT_DYNAMIC Sun Oct 12 16:31:16 UTC 2025', 'Architecture': 'x86_64', 'Processor': '', 'Python Version': '3.11.14', 'Hostname': 'fedora'}
+
+CPU:
+{'Physical Cores': 8, 'Total Cores': 16, 'Max Frequency': '4925.00 MHz', 'Current Frequency': '2318.58 MHz', 'CPU Usage': '2.1%'}
+
+MEMORY:
+{'Total RAM': '125.00 GB', 'Available RAM': '110.25 GB', 'Used RAM': '12.70 GB', 'RAM Usage': '11.8%', 'Total Swap': '8.00 GB', 'Used Swap': '0.00 GB', 'Swap Usage': '0.0%'}
+
+GPU:
+{'CUDA Available': True, 'CUDA Version': '12.1', 'cuDNN Version': 8902, 'Number of GPUs': 1, 'devices': [{'index': 0, 'name': 'NVIDIA RTX A5000 Laptop GPU', 'compute_capability': '8.6', 'total_memory': '15.61 GB', 'multiprocessors': 48}]}
+
+PYTORCH:
+{'PyTorch Version': '2.2.0+cu121', 'CUDA Available': True, 'cuDNN Enabled': True, 'cuDNN Version': 8902, 'Number of Threads': 8, 'MPS Available (macOS)': False}
+
+CPU_BENCHMARK:
+{'matmul_100x100': {'time_ms': 0.06566047668457031, 'gflops': 30.459724037763255}, 'matmul_500x500': {'time_ms': 0.5382776260375977, 'gflops': 464.44434601585687}, 'matmul_1000x1000': {'time_ms': 2.484250068664551, 'gflops': 805.0719310536772}, 'matmul_2000x2000': {'time_ms': 21.185588836669922, 'gflops': 755.2303654787146}, 'conv2d_batch_1': {'time_ms': 1.3255596160888672}, 'conv2d_batch_8': {'time_ms': 19.22159194946289}, 'conv2d_batch_32': {'time_ms': 72.88095951080322}}
+
+GPU_BENCHMARK:
+{'matmul_100x100': {'time_ms': 0.007367134094238281, 'gflops': 271.47598705501616}, 'matmul_500x500': {'time_ms': 0.03504753112792969, 'gflops': 7133.170068027211}, 'matmul_1000x1000': {'time_ms': 0.1947641372680664, 'gflops': 10268.830946260252}, 'matmul_2000x2000': {'time_ms': 1.6062140464782715, 'gflops': 9961.31246335508}, 'matmul_4000x4000': {'time_ms': 14.102005958557129, 'gflops': 9076.722870218993}, 'conv2d_batch_1': {'time_ms': 0.12094974517822266}, 'conv2d_batch_8': {'time_ms': 0.8462190628051758}, 'conv2d_batch_32': {'time_ms': 3.4151554107666016}, 'conv2d_batch_64': {'time_ms': 6.856024265289307}, 'mixed_precision': {'fp32_ms': 1.6295552253723145, 'fp16_ms': 1.7307519912719727, 'speedup': 0.9415301750857521}, 'memory_bandwidth_gbps': 359.5477262011916}
+
+ML_OPERATIONS:
+{'resnet_block_batch_1': 0.12969017028808594, 'resnet_block_batch_8': 0.4281330108642578, 'resnet_block_batch_32': 1.6367912292480469, 'attention_seqlen_128': 0.1677870750427246, 'attention_seqlen_512': 0.33855438232421875, 'attention_seqlen_1024': 0.9242057800292969}
+
+DATA_LOADING:
+{'workers_0': {'time_s': 0.7159132957458496, 'samples_per_sec': 13968.171927274858}, 'workers_2': {'time_s': 1.8881731033325195, 'samples_per_sec': 5296.124588550997}, 'workers_4': {'time_s': 1.7642221450805664, 'samples_per_sec': 5668.220426710113}, 'workers_8': {'time_s': 2.0612056255340576, 'samples_per_sec': 4851.529549561074}}
